@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Мобильное приложение «Деликат»</title>
+<meta name="description" content="Материал не является офертой.">
+<meta name="theme-color" content="#17161A">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="КП для Деликата">
+<meta property="og:description" content="Материал не является офертой.">
+<!-- Полный адрес обязателен, иначе WhatsApp не покажет картинку. -->
+<meta property="og:image" content="https://hermesalania-droid.github.io/d-2026/preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/logo/delikat-app-icon-512.png" sizes="512x512">
+<link rel="apple-touch-icon" href="assets/logo/delikat-app-icon-512.png">
+<link rel="preload" href="fonts/golos-text.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+
+<!-- Место для кода Яндекс Метрики -->
+</head>
+<body>
+
+<div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+
+<!-- ─────────────────────────  1. ПЕРВЫЙ ЭКРАН  ───────────────────────── -->
+<header class="hero" id="top">
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="wrap hero__inner">
+
+    <p class="hero__eyebrow">Для сети супермаркетов «Деликат»</p>
+
+    <div class="hero__logo">
+      <svg class="bull" viewBox="0 0 735 466" role="img" aria-label="Логотип «Деликат» — бык">
+        <g fill="currentColor">
+          <path d="M409.0,284.5 L406.0,284.5 L340.0,232.5 L254.0,194.5 L251.5,190.0 L241.5,150.0 L235.5,123.0 L235.5,116.0 L239.0,113.5 L289.0,98.5 L352.0,76.5 L363.0,74.5 L422.5,213.0 L413.5,269.0 L409.0,284.5 Z"/>
+          <path d="M55.0,291.5 L52.0,291.5 L49.5,287.0 L46.5,217.0 L47.5,201.0 L95.0,180.5 L208.0,126.5 L220.0,122.5 L232.5,169.0 L237.5,196.0 L55.0,291.5 Z"/>
+          <path d="M534.0,246.5 L532.0,246.5 L527.5,242.0 L482.5,185.0 L482.5,181.0 L485.5,177.0 L540.5,116.0 L537.5,110.0 L481.5,47.0 L481.5,45.0 L492.0,34.5 L521.0,9.5 L529.0,9.5 L591.0,22.5 L593.5,24.0 L594.5,28.0 L596.5,75.0 L595.5,106.0 L541.5,229.0 L539.5,237.0 L534.0,246.5 Z"/>
+          <path d="M286.0,332.5 L280.0,331.5 L208.0,272.5 L203.5,267.0 L204.5,231.0 L244.0,208.5 L252.0,209.5 L332.0,244.5 L395.5,294.0 L391.0,297.5 L346.0,299.5 L286.0,332.5 Z"/>
+          <path d="M504.0,464.5 L472.0,464.5 L467.5,461.0 L466.5,457.0 L466.5,313.0 L446.5,245.0 L442.5,223.0 L469.0,196.5 L472.0,196.5 L489.5,217.0 L523.5,260.0 L524.5,264.0 L499.5,409.0 L501.5,429.0 L507.5,452.0 L507.5,460.0 L504.0,464.5 Z"/>
+          <path d="M437.0,202.5 L434.5,201.0 L419.5,168.0 L394.5,107.0 L382.5,82.0 L377.5,66.0 L388.0,62.5 L462.0,48.5 L515.5,108.0 L519.5,113.0 L520.5,118.0 L437.0,202.5 Z"/>
+          <path d="M100.0,465.5 L46.0,465.5 L41.5,462.0 L41.5,349.0 L35.5,328.0 L35.5,322.0 L48.0,304.5 L66.0,302.5 L79.0,294.5 L186.0,240.5 L188.5,244.0 L187.5,267.0 L169.0,278.5 L134.0,295.5 L126.5,303.0 L92.5,348.0 L84.5,415.0 L104.5,459.0 L104.5,464.0 L100.0,465.5 Z"/>
+          <path d="M699.0,134.5 L691.0,134.5 L611.5,106.0 L609.5,75.0 L609.5,31.0 L611.5,19.0 L614.0,14.5 L642.0,4.5 L665.0,-0.5 L684.5,18.0 L689.5,25.0 L734.5,111.0 L731.5,120.0 L725.0,127.5 L699.0,134.5 Z M621.5,77.0 L636.0,65.5 L643.5,56.0 L644.5,21.0 L643.0,19.5 L631.5,48.0 L627.0,52.5 L617.5,57.0 L619.5,73.0 L621.5,77.0 Z"/>
+          <path d="M52.0,184.5 L48.5,183.0 L48.5,180.0 L51.5,173.0 L51.5,167.0 L57.5,149.0 L75.5,75.0 L80.0,62.5 L85.0,62.5 L104.0,70.5 L145.0,89.5 L190.0,107.5 L200.5,114.0 L188.0,121.5 L52.0,184.5 Z"/>
+          <path d="M531.0,333.5 L528.0,332.5 L526.5,329.0 L539.5,271.0 L568.5,203.0 L573.0,200.5 L607.0,214.5 L609.5,218.0 L609.5,222.0 L606.5,289.0 L568.0,314.5 L531.0,333.5 Z"/>
+          <path d="M224.0,104.5 L217.0,104.5 L212.0,102.5 L159.0,78.5 L156.0,78.5 L106.0,57.5 L100.5,53.0 L118.0,51.5 L203.0,56.5 L328.0,60.5 L344.5,63.0 L340.0,66.5 L324.0,70.5 L224.0,104.5 Z"/>
+          <path d="M5.0,337.5 L3.0,337.5 L1.5,335.0 L1.5,319.0 L-0.5,308.0 L-0.5,271.0 L19.5,246.0 L34.5,78.0 L42.0,68.5 L62.0,60.5 L63.5,62.0 L63.5,68.0 L32.5,184.0 L36.5,293.0 L5.0,337.5 Z"/>
+          <path d="M153.0,449.5 L143.0,449.5 L138.5,446.0 L123.5,400.0 L115.5,382.0 L106.5,352.0 L137.5,312.0 L143.0,306.5 L157.0,300.5 L158.5,302.0 L158.5,311.0 L148.5,380.0 L178.5,442.0 L179.5,447.0 L178.0,448.5 L153.0,449.5 Z"/>
+          <path d="M615.0,203.5 L611.0,203.5 L594.0,196.5 L576.5,187.0 L603.5,123.0 L606.0,120.5 L611.0,120.5 L668.5,142.0 L668.5,146.0 L615.0,203.5 Z"/>
+          <path d="M531.0,445.5 L522.0,444.5 L520.5,442.0 L517.5,413.0 L517.5,400.0 L523.5,355.0 L526.0,350.5 L555.0,336.5 L560.0,335.5 L561.5,337.0 L561.5,344.0 L556.5,367.0 L555.5,380.0 L553.5,384.0 L551.5,403.0 L561.5,438.0 L561.5,443.0 L560.0,444.5 L531.0,445.5 Z"/>
+          <path d="M449.0,347.5 L373.0,320.5 L363.0,316.5 L361.5,314.0 L365.0,312.5 L421.0,310.5 L425.5,293.0 L429.5,264.0 L431.5,257.0 L434.0,255.5 L452.5,315.0 L452.5,343.0 L449.0,347.5 Z"/>
+          <path d="M712.0,33.5 L707.0,33.5 L703.5,30.0 L697.5,18.0 L685.5,7.0 L686.0,4.5 L691.0,4.5 L712.0,12.5 L720.5,19.0 L724.5,26.0 L712.0,33.5 Z"/>
+        </g>
+      </svg>
+    </div>
+
+    <h1 class="hero__title">Мобильное приложение «Деликат»</h1>
+    <p class="hero__sub">Что входит, сколько стоит и когда будет готово</p>
+
+    <ul class="hero__stats">
+      <li>
+        <b class="num">650&nbsp;000&nbsp;₽</b>
+        <span>полный объём работ</span>
+      </li>
+      <li>
+        <b class="num">2&nbsp;месяца</b>
+        <span>от подписания договора до запуска</span>
+      </li>
+      <li>
+        <b class="num">2&nbsp;приложения</b>
+        <span>для покупателей и для команды доставки</span>
+      </li>
+    </ul>
+
+    <p class="hero__sign">Давид, разработка и сопровождение. Владикавказ, сентябрь 2026</p>
+  </div>
+</header>
+
+<main>
+
+<!-- ─────────────────────────  2. КОГДА ЗАКАЗЫВАЮТ  ───────────────────────── -->
+<section class="sec" id="spros">
+  <div class="wrap">
+    <h2 class="h2 r">Люди заказывают, когда им удобно.<br>Оператор&nbsp;— до&nbsp;19:30</h2>
+    <p class="lead r">После 19:30 операторы заказы не принимают, остаётся только сайт. Магазины при этом работают до 22:00. Вот как на это ложатся исследования спроса.</p>
+
+    <div class="day r" id="day">
+      <div class="day__tabs" role="group" aria-label="Режимы спроса">
+        <button type="button" class="day__tab is-on" aria-pressed="true"  data-mode="food">Готовая еда</button>
+        <button type="button" class="day__tab"       aria-pressed="false" data-mode="groc">Продукты</button>
+        <button type="button" class="day__tab"       aria-pressed="false" data-mode="shop">В магазине</button>
+      </div>
+
+      <div class="day__scale">
+        <div class="day__rows" id="dayRows"><!-- строки рисует app.js; статичная версия ниже --></div>
+
+        <div class="day__axis" aria-hidden="true">
+          <span style="left:0%">8:00</span>
+          <span style="left:26.667%">12:00</span>
+          <span style="left:53.333%">16:00</span>
+          <span style="left:80%">20:00</span>
+          <span style="left:100%">23:00</span>
+        </div>
+      </div>
+
+      <ul class="day__legend">
+        <li><i class="dot dot--peak"></i>пик</li>
+        <li><i class="dot dot--main"></i>основной объём</li>
+        <li><i class="dot dot--gap"></i>19:30–22:00&nbsp;— магазины открыты, а оператор уже не принимает заказ</li>
+        <li><i class="dot dot--close"></i>22:00&nbsp;— магазины закрываются</li>
+      </ul>
+
+      <div class="day__note" id="dayNote" aria-live="polite">
+        <b class="day__big">½</b>
+        <p class="day__text">Пик готовой еды в будни&nbsp;— 18:00–21:00. Половина его приходится на время после 19:30, когда остаётся только сайт.</p>
+      </div>
+      <p class="src" id="daySrc">Источник: Т-Банк Бизнес, 2024; Чиббис, 2025: самый загруженный час&nbsp;— 18:00–19:00, 12,1% заказов за день</p>
+
+      <div class="day__print">
+        <p><b>Продукты.</b> Будни: весь день ровно, без выраженного пика. Выходные: пик 11:00–15:00. <b>17%</b> опрошенных делают поздние заказы продуктов, после 21:00. В будни продукты заказывают ровно весь день, без выраженного пика, в выходные&nbsp;— днём. <span class="src">Источник: Т-Банк Бизнес, 2024; Купер и Rambler&amp;Co, 2026</span></p>
+        <p><b>В магазине.</b> Все дни: пик 17:00–21:00. <b>17–21</b> Вечером люди сами приходят в магазин. Лучшее время, чтобы кассир предложил поставить приложение. <span class="src">Источник: Т-Банк Бизнес, 2024. Пиковые дни&nbsp;— среда, пятница и суббота</span></p>
+      </div>
+
+      <noscript>
+        <div class="ns">
+          <p><b>Готовая еда.</b> Будни: основной объём 16:00–20:00, пик 18:00–21:00. Выходные: весь день с 13:00. <b>½</b> Пик готовой еды в будни&nbsp;— 18:00–21:00. Половина его приходится на время после 19:30, когда остаётся только сайт. <span class="src">Источник: Т-Банк Бизнес, 2024; Чиббис, 2025: самый загруженный час&nbsp;— 18:00–19:00, 12,1% заказов за день</span></p>
+          <p><b>Продукты.</b> Будни: весь день ровно, без выраженного пика. Выходные: пик 11:00–15:00. <b>17%</b> опрошенных делают поздние заказы продуктов, после 21:00. В будни продукты заказывают ровно весь день, без выраженного пика, в выходные&nbsp;— днём. <span class="src">Источник: Т-Банк Бизнес, 2024; Купер и Rambler&amp;Co, 2026</span></p>
+          <p><b>В магазине.</b> Все дни: пик 17:00–21:00. <b>17–21</b> Вечером люди сами приходят в магазин. Лучшее время, чтобы кассир предложил поставить приложение. <span class="src">Источник: Т-Банк Бизнес, 2024. Пиковые дни&nbsp;— среда, пятница и суббота</span></p>
+        </div>
+      </noscript>
+    </div>
+
+    <div class="week r">
+      <h3 class="h3">Готовую еду больше всего заказывают к выходным</h3>
+      <p class="week__sub">Пятница, суббота и воскресенье&nbsp;— 53,8% заказов недели</p>
+
+      <div class="week__chart" id="weekChart">
+        <div class="week__bar is-range" data-lo="11.2" data-hi="11.5"><span>Пн</span><div class="week__tr"><i></i></div><b>11,2–11,5%</b></div>
+        <div class="week__bar is-range" data-lo="11.2" data-hi="11.5"><span>Вт</span><div class="week__tr"><i></i></div><b>11,2–11,5%</b></div>
+        <div class="week__bar is-range" data-lo="11.2" data-hi="11.5"><span>Ср</span><div class="week__tr"><i></i></div><b>11,2–11,5%</b></div>
+        <div class="week__bar" data-lo="12.2" data-hi="12.2"><span>Чт</span><div class="week__tr"><i></i></div><b>12,2%</b></div>
+        <div class="week__bar is-hi" data-lo="17.6" data-hi="17.6"><span>Пт</span><div class="week__tr"><i></i></div><b>17,6%</b></div>
+        <div class="week__bar is-hi" data-lo="19.8" data-hi="19.8"><span>Сб</span><div class="week__tr"><i></i></div><b>19,8%</b></div>
+        <div class="week__bar is-hi" data-lo="16.4" data-hi="16.4"><span>Вс</span><div class="week__tr"><i></i></div><b>16,4%</b></div>
+      </div>
+
+      <p class="src">Источник: Чиббис, почти миллион заказов в 200 городах, 2025. Понедельник–среда&nbsp;— по 11,2–11,5%.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────  3. ЖАЛОБЫ  ───────────────────────── -->
+<section class="sec sec--alt" id="jaloby">
+  <div class="wrap">
+    <h2 class="h2 r">Жалуются не на продукты, а на способ заказа</h2>
+    <p class="lead r">Отзывы о доставке на Яндекс Картах, оценка 3★ и ниже. Остальные темы&nbsp;— выбор, мясо, выпечка, персонал&nbsp;— в основном положительные.</p>
+
+    <div class="shares r">
+      <div class="share">
+        <div class="share__bar"><i style="--p:51%"></i></div>
+        <b class="share__pct">51%</b>
+        <p class="share__name">«Деликат-Премиум», Архонское шоссе</p>
+        <p class="share__cnt">25 из 49</p>
+      </div>
+      <div class="share">
+        <div class="share__bar"><i style="--p:51%"></i></div>
+        <b class="share__pct">51%</b>
+        <p class="share__name">«Деликат», Карцинское шоссе</p>
+        <p class="share__cnt">18 из 35</p>
+      </div>
+    </div>
+
+    <ul class="pairs r">
+      <li>
+        <div class="pairs__now"><span class="tag tag--now">Сейчас</span><p>После 19:30 оператор заказ не примет, хотя магазины работают до 22:00</p></div>
+        <div class="pairs__arr" aria-hidden="true"></div>
+        <div class="pairs__new"><span class="tag tag--new">В приложении</span><p>Заказ в приложении&nbsp;— в любое время</p></div>
+      </li>
+      <li>
+        <div class="pairs__now"><span class="tag tag--now">Сейчас</span><p>Привозят не то или не всё</p></div>
+        <div class="pairs__arr" aria-hidden="true"></div>
+        <div class="pairs__new"><span class="tag tag--new">В приложении</span><p>Покупатель сам собирает корзину, оператору нечего записывать</p></div>
+      </li>
+      <li>
+        <div class="pairs__now"><span class="tag tag--now">Сейчас</span><p>Непонятно, где заказ</p></div>
+        <div class="pairs__arr" aria-hidden="true"></div>
+        <div class="pairs__new"><span class="tag tag--new">В приложении</span><p>Статус в приложении: собираем, везём, доставлено</p></div>
+      </li>
+      <li>
+        <div class="pairs__now"><span class="tag tag--now">Сейчас</span><p>Товара не оказалось</p></div>
+        <div class="pairs__arr" aria-hidden="true"></div>
+        <div class="pairs__new"><span class="tag tag--new">В приложении</span><p>Остатки из 1С, замену согласуют до выезда курьера</p></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ─────────────────────────  4. РЫНОК  ───────────────────────── -->
+<section class="sec sec--dark" id="rynok">
+  <div class="wrap">
+    <h2 class="h2 r">Покупатели продуктов уходят в телефон</h2>
+
+    <ul class="market r">
+      <li><b class="num">+27%</b><p>рост онлайн-продаж продуктов в России за 2025 год</p></li>
+      <li><b class="num">1,6&nbsp;трлн&nbsp;₽</b><p>объём рынка онлайн-продаж продуктов за год</p></li>
+      <li><b class="num">5,5%</b><p>доля онлайна в продуктовой рознице. Рынок ещё не занят, и в регионах он по-прежнему растёт быстрее</p></li>
+    </ul>
+
+    <p class="src src--on-dark">Источник: Infoline, итоги 2025 года</p>
+  </div>
+</section>
+
+<!-- ─────────────────────────  5. ОПЫТ ДРУГИХ  ───────────────────────── -->
+<section class="sec" id="opyt">
+  <div class="wrap">
+    <h2 class="h2 r">Что приложение дало другим</h2>
+
+    <div class="cases r">
+      <article class="case">
+        <p class="case__who">«Дикси»</p>
+        <b class="case__num">≈90%</b>
+        <p class="case__txt">онлайн-заказов сети идёт через приложение, а не через сайт.</p>
+        <p class="src">New Retail, 2025</p>
+      </article>
+      <article class="case">
+        <p class="case__who">«ВкусВилл»</p>
+        <b class="case__num">≈50%</b>
+        <p class="case__txt">продаж&nbsp;— онлайн. О доставке покупателям рассказывали продавцы в магазинах.</p>
+        <p class="src">Retail.ru, итоги 2023 года</p>
+      </article>
+      <article class="case">
+        <p class="case__who">«Поспел», поставщик продуктов</p>
+        <b class="case__num case__num--multi">−40%, ×3, +15%</b>
+        <p class="case__txt">звонков меньше, заказы обрабатываются в три раза быстрее, средний чек выше. Приложение связано с 1С.</p>
+        <p class="src">СберПро, 2025</p>
+      </article>
+      <article class="case">
+        <p class="case__who">46 000 покупателей</p>
+        <b class="case__num case__num--multi">+10%, +4%</b>
+        <p class="case__txt">тратят больше те, кто покупает и онлайн, и в магазине: на 10% онлайн и на 4% в магазине.</p>
+        <p class="src">Harvard Business Review</p>
+      </article>
+    </div>
+
+    <p class="concl r">Результат зависит не от приложения, а от того, узнают ли о нём покупатели.</p>
+  </div>
+</section>
+
+<!-- ─────────────────────────  6. ПУТЬ ЗАКАЗА  ───────────────────────── -->
+<section class="sec sec--alt" id="put">
+  <div class="wrap">
+    <h2 class="h2 r">Путь заказа&nbsp;— от телефона покупателя до двери</h2>
+
+    <ol class="path r" id="path">
+      <li><span class="path__n">1</span><b>Покупатель</b><p>Собирает корзину, выбирает время доставки, оплачивает</p></li>
+      <li><span class="path__n">2</span><b>Диспетчер</b><p>Сразу видит заказ, без звонка и записи</p></li>
+      <li><span class="path__n">3</span><b>Сборщик</b><p>Собирает по маршруту магазина, отмечает, если товара нет</p></li>
+      <li><span class="path__n">4</span><b>Диспетчер</b><p>Согласует замену с покупателем и проверяет собранный заказ</p></li>
+      <li><span class="path__n">5</span><b>Курьер</b><p>Везёт заказ, покупатель видит статус</p></li>
+    </ol>
+
+    <p class="note r">Операторы, которые сейчас принимают звонки, становятся диспетчерами.</p>
+  </div>
+</section>
+
+<!-- ─────────────────────────  7. ПРИЛОЖЕНИЕ ДЛЯ ПОКУПАТЕЛЕЙ  ───────────────────────── -->
+<section class="sec" id="pokupateli">
+  <div class="wrap">
+    <h2 class="h2 r">Приложение для покупателей</h2>
+    <p class="lead r">iPhone и Android. Ваш ассортимент, ваши цены и остатки из 1С.</p>
+
+    <div class="app__lists r">
+      <div class="lcol">
+        <h3 class="h3">Каталог и выбор</h3>
+        <ul class="ticks">
+          <li>Вход по номеру телефона</li>
+          <li>Каталог по отделам: товары, цены и остатки из 1С</li>
+          <li>Своя продукция отмечена «Наше»</li>
+          <li>Весовой товар с шагом 200&nbsp;г, пересчёт по факту</li>
+          <li>Осетинские пироги&nbsp;— испекут к выбранному времени доставки</li>
+          <li>Готовая кухня и поиск по названию</li>
+          <li>Повтор прошлого заказа в одно касание</li>
+        </ul>
+      </div>
+      <div class="lcol">
+        <h3 class="h3">Заказ и оплата</h3>
+        <ul class="ticks">
+          <li>Время доставки по часовым интервалам</li>
+          <li>Бесплатная доставка от суммы, которую задаёте вы</li>
+          <li>Оплата картой и через СБП. За весовой товар сумма блокируется с небольшим запасом и списывается по факту веса</li>
+          <li>Если товара нет&nbsp;— покупатель заранее выбирает: позвонить или заменить</li>
+          <li>Статус заказа и уведомления</li>
+          <li>Бонусы: начисление и списание</li>
+          <li>Кейтеринг: повод, число гостей, меню&nbsp;— сумма видна сразу, заявка в любое время суток</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────  8. ПРИЛОЖЕНИЕ ДЛЯ КОМАНДЫ  ───────────────────────── -->
+<section class="sec sec--alt" id="komanda">
+  <div class="wrap">
+    <h2 class="h2 r">Приложение для команды</h2>
+    <p class="lead r">Диспетчерская на компьютере и телефон сборщика. Каждый заказ проходит проверку перед выдачей.</p>
+
+    <div class="board r" id="board">
+      <div class="board__col"><span class="board__h">Новые</span><i></i><i></i></div>
+      <div class="board__col"><span class="board__h">Нужен звонок</span><i></i></div>
+      <div class="board__col"><span class="board__h">Собираются</span><i></i><i></i><i></i></div>
+      <div class="board__col"><span class="board__h">Проверка</span><i></i></div>
+      <div class="board__col"><span class="board__h">Готовы к выдаче</span><i></i><i></i></div>
+    </div>
+
+    <div class="cols2 r">
+      <div class="lcol">
+        <h3 class="h3">Диспетчерская</h3>
+        <ul class="ticks">
+          <li>Доска заказов: новые, нужен звонок, собираются, проверка, готовы к выдаче</li>
+          <li>Приём заказа по телефону через тот же каталог, с поиском</li>
+          <li>Замена товара из той же категории или удаление позиции</li>
+          <li>Проверка собранного заказа, возврат сборщику с причиной</li>
+        </ul>
+      </div>
+      <div class="lcol">
+        <h3 class="h3">Сборщик</h3>
+        <ul class="ticks">
+          <li>Свободные и свои заказы</li>
+          <li>Маршрут по магазину: зал, мясной отдел, пекарня</li>
+          <li>Отметка «Нет в наличии» и точный вес</li>
+          <li>Счётчик возвратов по каждому сборщику</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────  9. БОНУСЫ  ───────────────────────── -->
+<section class="sec" id="bonusy">
+  <div class="wrap">
+    <h2 class="h2 r">Сколько и на что давать бонусы&nbsp;— решаете вы</h2>
+
+    <div class="cols2 r">
+      <div class="lcol">
+        <h3 class="h3">Правила</h3>
+        <ul class="ticks">
+          <li>Процент и правила задаёте вы сами</li>
+          <li>Можно начислять бонусы только на своё производство: мясо, выпечку, готовую кухню</li>
+          <li>Можно ограничить, какую часть заказа оплачивают бонусами, сколько они действуют и на какие товары не начисляются</li>
+        </ul>
+      </div>
+      <div class="lcol">
+        <h3 class="h3">Покупатели магазинов</h3>
+        <ul class="ticks">
+          <li>В приложении&nbsp;— виртуальная карта со штрихкодом, кассир сканирует её на кассе</li>
+          <li>Бонусы общие: заработал в магазине&nbsp;— потратил в доставке, и наоборот</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─────────────────────────  10. КАЛЬКУЛЯТОР  ───────────────────────── -->
+<section class="sec sec--calc" id="calc">
+  <div class="wrap">
+    <h2 class="h2 r">Посчитайте на своих цифрах</h2>
+    <p class="lead r">Цифры по умолчанию&nbsp;— пример для 100 заказов в день. Подставьте свои: расчёт обновится сразу.</p>
+
+    <div class="calc r">
+      <div class="calc__inputs">
+        <label class="fld">
+          <span class="fld__t">Заказов доставки в день</span>
+          <output class="fld__v" id="vOrders">100</output>
+          <input type="range" id="iOrders" min="20" max="400" step="5" value="100">
+        </label>
+        <label class="fld">
+          <span class="fld__t">Средний чек</span>
+          <output class="fld__v" id="vCheck">3&nbsp;000&nbsp;₽</output>
+          <input type="range" id="iCheck" min="1000" max="8000" step="100" value="3000">
+        </label>
+        <label class="fld">
+          <span class="fld__t">Средняя наценка</span>
+          <output class="fld__v" id="vMargin">25%</output>
+          <input type="range" id="iMargin" min="10" max="50" step="1" value="25">
+        </label>
+        <label class="fld">
+          <span class="fld__t">Бонусы покупателям</span>
+          <output class="fld__v" id="vBonus">1%</output>
+          <input type="range" id="iBonus" min="0" max="5" step="0.5" value="1">
+        </label>
+      </div>
+
+      <div class="calc__print" id="calcPrint" aria-hidden="true"></div>
+
+      <div class="calc__out">
+        <div class="res">
+          <b class="res__n" id="rProfit">301&nbsp;650&nbsp;₽</b>
+          <p class="res__c">валовой прибыли в месяц после выхода на мощность, за вычетом бонусов</p>
+        </div>
+        <div class="res">
+          <b class="res__n" id="rPayback">3,7&nbsp;мес</b>
+          <p class="res__c">до возврата вложений с учётом раскачки первых месяцев</p>
+        </div>
+      </div>
+
+      <div class="calc__rows" id="calcRows">
+        <div class="row"><span>Чек в приложении выше</span><b id="rCheck">+135&nbsp;000&nbsp;₽</b></div>
+        <div class="row"><span>Новые заказы</span><b id="rNew">+108&nbsp;000&nbsp;₽</b></div>
+        <div class="row"><span>Приём после 19:30 и в праздники</span><b id="rHours">+40&nbsp;200&nbsp;₽</b></div>
+        <div class="row"><span>Оплата вперёд, меньше отказов</span><b id="rRefuse">+27&nbsp;000&nbsp;₽</b></div>
+        <div class="row"><span>Меньше ошибок при записи</span><b id="rErr">+22&nbsp;500&nbsp;₽</b></div>
+        <div class="row row--minus"><span>Бонусы покупателям</span><b id="rBonus">−31&nbsp;050&nbsp;₽</b></div>
+      </div>
+
+      <figure class="calc__chart">
+        <figcaption>Накопленная выгода за 12 месяцев против вложений</figcaption>
+        <svg id="chart" viewBox="0 0 320 180" preserveAspectRatio="none" role="img" aria-labelledby="chartDesc"></svg>
+        <p id="chartDesc" class="vh">График накопленной выгоды по месяцам и линия вложений.</p>
+        <div class="calc__xaxis"><span>1 мес</span><span>6 мес</span><span>12 мес</span></div>
+      </figure>
+
+      <details class="how">
+        <summary>Как считается</summary>
+        <ul>
+          <li>Валовая прибыль&nbsp;— выручка минус закупка товара. Постоянные расходы сети не вычтены.</li>
+          <li>Через приложение идёт половина заказов доставки.</li>
+          <li>Чек в приложении выше на 15%&nbsp;— как в кейсе «Поспел».</li>
+          <li>Новых заказов +6%: люди, которым было неудобно звонить.</li>
+          <li>Приём после 19:30 и в праздники: +67 заказов в месяц на каждые 3 000.</li>
+          <li>Оплата вперёд: на 1,5% меньше отказов при получении.</li>
+          <li>Ошибки при записи заказа: минус 1,5% заказов по 500&nbsp;₽ потерь.</li>
+          <li>Бонусы начисляются на заказы в приложении, 40% бонусов не тратятся и сгорают.</li>
+          <li>Раскачка: 30%, 55%, 75%, 90% эффекта в первые четыре месяца, с пятого&nbsp;— полный.</li>
+          <li>Вложения: 650&nbsp;000&nbsp;₽ + аккаунты Apple и Google 11&nbsp;300&nbsp;₽.</li>
+        </ul>
+      </details>
+
+      <p class="calc__disclaimer">Это расчёт по допущениям, а не обещание. Любое допущение можно поменять&nbsp;— пересчитаю вместе с вами.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────  11. СРОКИ  ───────────────────────── -->
+<section class="sec sec--alt" id="sroki">
+  <div class="wrap">
+    <h2 class="h2 r">2 месяца с момента подписания договора</h2>
+
+    <ol class="weeks r">
+      <li><span class="weeks__n">Неделя 1 и 2</span><p>Сервер и дизайн, съёмка позиций</p></li>
+      <li><span class="weeks__n">Неделя 3 и 4</span><p>Корзина, оформление заказа, бонусы. Показ промежуточной версии</p></li>
+      <li><span class="weeks__n">Неделя 5 и 6</span><p>Кейтеринг, готовая кухня, уведомления</p></li>
+      <li><span class="weeks__n">Неделя 7 и 8</span><p>Проверка на реальных заказах, обучение сотрудников, публикация в сторах</p></li>
+    </ol>
+
+    <p class="note r">Google Play и App Store&nbsp;— после проверки магазинами приложений. При задержке данных или доступов срок сдвигается на то же число дней.</p>
+  </div>
+</section>
+
+<!-- ─────────────────────────  12. ЧТО НУЖНО  ───────────────────────── -->
+<section class="sec" id="nuzhno">
+  <div class="wrap">
+    <h2 class="h2 r">Что нужно от «Деликата»</h2>
+
+    <div class="need r">
+      <article class="need__i"><span class="need__w">Неделя 1–2</span><b>Данные</b><p>Доступ к 1С.</p></article>
+      <article class="need__i"><span class="need__w">С первой недели</span><b>Ответственный сотрудник</b><p>Один человек, который согласует решения в течение 2 рабочих дней.</p></article>
+      <article class="need__i"><span class="need__w">К неделе 6</span><b>Юридическое</b><p>Договор эквайринга с банком. Аккаунты RuStore, Google Play и Apple на юрлицо.</p></article>
+      <article class="need__i"><span class="need__w">С запуска</span><b>Продвижение</b><p>Кассиры рассказывают о приложении, объявление и QR-код на кассе, публикации в ваших соцсетях.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────  13. ЧТО НЕ ВХОДИТ  ───────────────────────── -->
+<section class="sec sec--alt" id="nevhodit">
+  <div class="wrap">
+    <h2 class="h2 r">Что не входит в стоимость</h2>
+    <ul class="outs r">
+      <li>Сайт доставки</li>
+      <li>Приложение для курьеров</li>
+      <li>Настройка 1С на стороне «Деликата»&nbsp;— её выполняет ваш специалист по 1С</li>
+      <li>Реклама и продвижение приложения</li>
+      <li>Новые функции сверх перечня на этой странице&nbsp;— по отдельной договорённости</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ─────────────────────────  14. УСЛОВИЯ  ───────────────────────── -->
+<section class="sec sec--terms" id="usloviya">
+  <div class="wrap">
+    <h2 class="h2 r">Условия</h2>
+
+    <div class="price r">
+      <b class="price__n">650&nbsp;000&nbsp;₽</b>
+      <p class="price__c">за полный объём работ.</p>
+    </div>
+
+    <div class="terms r">
+      <div class="terms__b">
+        <h3 class="h3">Оплата</h3>
+        <dl class="kv">
+          <div><dt>При подписании договора</dt><dd>400&nbsp;000&nbsp;₽</dd></div>
+          <div><dt>При сдаче</dt><dd>250&nbsp;000&nbsp;₽</dd></div>
+        </dl>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─────────────────────────  15. ПРИЁМКА  ───────────────────────── -->
+<section class="sec" id="priyomka">
+  <div class="wrap">
+    <h2 class="h2 r">Что значит «сдано»</h2>
+
+    <div class="done r">
+      <div class="done__list">
+        <ul class="ticks ticks--big">
+          <li>Приложение опубликовано в RuStore</li>
+          <li>На iPhone приложение ставится с сайта на экран «Домой»&nbsp;— до публикации в App Store</li>
+          <li>Работают диспетчерская и приложение сборщика</li>
+          <li>Товары, цены и остатки обновляются из 1С</li>
+          <li>10 тестовых заказов прошли путь от покупателя до выдачи, с оплатой</li>
+          <li>Сотрудники обучены</li>
+        </ul>
+        <p class="note">Публикация в Google Play и App Store зависит от проверки магазинов приложений и на сдачу не влияет.</p>
+      </div>
+
+      <div class="done__phone">
+        <div class="phone phone--ios" aria-hidden="true">
+          <div class="ios">
+            <div class="ios__bar"><i class="ios__sig"></i><i class="ios__wifi"></i><i class="ios__bat"></i></div>
+            <div class="ios__grid">
+              <span class="ios__app"></span>
+              <span class="ios__app"></span>
+              <span class="ios__app"></span>
+              <span class="ios__app"></span>
+              <span class="ios__app ios__app--main">
+                <img src="assets/logo/delikat-app-icon-512.png" width="512" height="512" alt="">
+                <b>Деликат</b>
+              </span>
+              <span class="ios__app"></span>
+              <span class="ios__app"></span>
+              <span class="ios__app"></span>
+              <span class="ios__app"></span>
+              <span class="ios__app"></span>
+              <span class="ios__app"></span>
+              <span class="ios__app"></span>
+            </div>
+            <div class="ios__dock"><i></i><i></i><i></i><i></i></div>
+          </div>
+        </div>
+        <p class="vh">Иллюстрация: будущая иконка приложения «Деликат» на экране «Домой» iPhone.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────  РЕКЛАМНЫЙ БИЛБОРД  ───────────────────────── -->
+<section class="bb" id="reklama">
+  <svg class="bb__city" viewBox="0 0 1200 260" preserveAspectRatio="none" aria-hidden="true">
+    <g fill="#0B0A0D">
+      <rect x="0" y="120" width="86" height="140"/><rect x="92" y="168" width="64" height="92"/>
+      <rect x="162" y="96" width="74" height="164"/><rect x="242" y="150" width="58" height="110"/>
+      <rect x="306" y="128" width="92" height="132"/><rect x="404" y="176" width="70" height="84"/>
+      <rect x="480" y="104" width="66" height="156"/><rect x="552" y="158" width="88" height="102"/>
+      <rect x="646" y="132" width="60" height="128"/><rect x="712" y="92" width="80" height="168"/>
+      <rect x="798" y="164" width="66" height="96"/><rect x="870" y="124" width="94" height="136"/>
+      <rect x="970" y="172" width="62" height="88"/><rect x="1038" y="110" width="78" height="150"/>
+      <rect x="1122" y="156" width="78" height="104"/>
+    </g>
+    <g fill="#CE1B23" opacity=".34">
+      <rect x="14" y="136" width="7" height="9"/><rect x="32" y="158" width="7" height="9"/>
+      <rect x="58" y="136" width="7" height="9"/><rect x="108" y="184" width="7" height="9"/>
+      <rect x="132" y="206" width="7" height="9"/><rect x="178" y="112" width="7" height="9"/>
+      <rect x="204" y="144" width="7" height="9"/><rect x="178" y="188" width="7" height="9"/>
+      <rect x="258" y="166" width="7" height="9"/><rect x="278" y="200" width="7" height="9"/>
+      <rect x="322" y="146" width="7" height="9"/><rect x="360" y="146" width="7" height="9"/>
+      <rect x="340" y="196" width="7" height="9"/><rect x="420" y="192" width="7" height="9"/>
+      <rect x="496" y="122" width="7" height="9"/><rect x="520" y="164" width="7" height="9"/>
+      <rect x="576" y="176" width="7" height="9"/><rect x="608" y="212" width="7" height="9"/>
+      <rect x="662" y="150" width="7" height="9"/><rect x="682" y="192" width="7" height="9"/>
+      <rect x="730" y="110" width="7" height="9"/><rect x="762" y="148" width="7" height="9"/>
+      <rect x="730" y="196" width="7" height="9"/><rect x="816" y="182" width="7" height="9"/>
+      <rect x="888" y="142" width="7" height="9"/><rect x="928" y="174" width="7" height="9"/>
+      <rect x="986" y="190" width="7" height="9"/><rect x="1056" y="128" width="7" height="9"/>
+      <rect x="1090" y="170" width="7" height="9"/><rect x="1142" y="174" width="7" height="9"/>
+    </g>
+  </svg>
+
+  <div class="wrap">
+    <figure class="bb__board r">
+      <div class="bb__screen">
+        <span class="bb__off" aria-hidden="true"></span>
+        <span class="bb__flash" aria-hidden="true"></span>
+        <span class="bb__glare" aria-hidden="true"></span>
+        <div class="bb__content">
+          <div class="bb__mark">
+            <img class="bb__bull" src="assets/logo/delikat-bull-red.svg" width="735" height="466" alt="" loading="lazy">
+            <p class="bb__name">Деликат</p>
+            <p class="bb__tag"><span>мясное</span> место</p>
+          </div>
+          <div class="bb__txt">
+            <p class="bb__slogan">Теперь любимый супермаркет<span>в вашем телефоне</span></p>
+            <p class="bb__serv">Доставка продуктов&nbsp;· Кейтеринг&nbsp;· Оптовые заказы</p>
+            <p class="bb__stores"><span>RuStore</span><span>Google&nbsp;Play</span><span>App&nbsp;Store</span></p>
+          </div>
+        </div>
+      </div>
+      <span class="bb__pole" aria-hidden="true"></span>
+      <span class="bb__base" aria-hidden="true"></span>
+    </figure>
+  </div>
+</section>
+
+</main>
+
+<!-- ─────────────────────────  16. ФИНАЛ  ───────────────────────── -->
+<footer class="final" id="final">
+  <div class="wrap">
+    <h2 class="h2 r">Готов начать</h2>
+    <p class="final__t r">Срок&nbsp;— 2 месяца с момента подписания договора.</p>
+
+    <div class="final__btns r">
+      <a class="btn btn--primary" href="tel:+79618201811">Позвонить Давиду</a>
+      <a class="btn btn--ghost" href="https://wa.me/79618201811?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%94%D0%B0%D0%B2%D0%B8%D0%B4!%20%D0%9F%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D0%BB%20%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BF%D0%BE%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8E%20%C2%AB%D0%94%D0%B5%D0%BB%D0%B8%D0%BA%D0%B0%D1%82%C2%BB." target="_blank" rel="noopener">Написать в WhatsApp</a>
+      <a class="btn btn--ghost btn--pdf" href="delikat-offer.pdf" download>Скачать PDF</a>
+    </div>
+
+    <p class="final__sign r">Давид. Разработка и сопровождение. <a href="tel:+79618201811">+7 961 820-18-11</a></p>
+
+    <p class="final__note r">Данный материал не является офертой.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
